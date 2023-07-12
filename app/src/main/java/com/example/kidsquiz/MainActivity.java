@@ -22,13 +22,13 @@ import java.util.List;
 public class MainActivity extends Fragment {
 
     Button btnOne, btnTwo, btnThree;
-   // DBHelper db;
+    DBHelper db;
     NavigationView navigationView;
     DrawerLayout drawerLayout;
     Toolbar toolbar;
     ActionBarDrawerToggle toggle;
 
-    //List<Question> list = new ArrayList<Question>();
+    List<Question> list = new ArrayList<Question>();
 
     public MainActivity(){}
 
@@ -38,11 +38,11 @@ public class MainActivity extends Fragment {
 
         View view = inflater.inflate(R.layout.activity_main, container, false);
         btnOne = view.findViewById(R.id.startButton);
-        //btnTwo = view.findViewById(R.id.resultbtn);
-       // db = new DBHelper(getContext().getApplicationContext());
+        btnTwo = view.findViewById(R.id.resultButton);
+       db = new DBHelper(getContext().getApplicationContext());
 
 
-        /*btnOne.setOnClickListener(new View.OnClickListener() {
+        btnOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 db.clearDB();
@@ -51,9 +51,9 @@ public class MainActivity extends Fragment {
                 transaction.replace(R.id.layoutMainActivity, fragmentOne);
                 transaction.commit();
             }
-        });*/
+        });
 
-        btnTwo.setOnClickListener(new View.OnClickListener() {
+       btnTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ResultDisplay fragmentOne = new ResultDisplay();
