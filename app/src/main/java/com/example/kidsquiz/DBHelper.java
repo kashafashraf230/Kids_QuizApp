@@ -23,8 +23,6 @@ public class DBHelper extends SQLiteOpenHelper {
     private static final String COLUMN_CORRECTANSWER = "correct_answer";
 
 
-
-
     public DBHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }

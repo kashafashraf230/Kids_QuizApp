@@ -12,6 +12,9 @@
         android:theme="@style/Theme.KidsQuiz"
         tools:targetApi="31">
         <activity
+            android:name=".FRExam"
+            android:exported="false" />
+        <activity
             android:name=".ResultDisplay"
             android:exported="false" />
         <activity
