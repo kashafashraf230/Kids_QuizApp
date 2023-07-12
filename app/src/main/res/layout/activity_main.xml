@@ -7,17 +7,42 @@
     android:background="@drawable/kids_bg"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/kidWelcome"
-        android:layout_width="175dp"
-        android:layout_height="75dp"
-        android:text="Excited for Quiz, Kids!"
-        android:textSize="32dp"
-        android:fontFamily="@font/poppins_semiBold"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutMainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="492dp"
+        android:backgroundTint="@color/teal_700"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.354" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintVertical_bias="0.43"/>
+
+
+        <TextView
+            android:id="@+id/kidWelcome"
+            android:layout_width="236dp"
+            android:layout_height="69dp"
+            android:text="Excited for Quiz, Kids!"
+            android:textSize="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.392" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="130dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="37dp"
+            android:text="Let's start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kidWelcome"
+            app:layout_constraintVertical_bias="0.047" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
