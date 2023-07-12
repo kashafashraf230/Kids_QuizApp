@@ -20,7 +20,7 @@ public class MyViewAdapter extends ArrayAdapter<Question> {
     public MyViewAdapter(@NonNull Context context, List<Question> studentArrayList)
     {super(context, 0, studentArrayList);}
 
-    @SuppressLint("ResourceAsColor")
+    //@SuppressLint("ResourceAsColor")
     @Override public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent)
     {
         Question student = getItem(position);
